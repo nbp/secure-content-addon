@@ -22,7 +22,3 @@ self.port.on("secure-content-rem-report", function (report_json) {
   document.location = "./panel.js";
   document.getElementById("secure-report").style.display = "none";
 });
-
-document.getElementById("sign-content").onclick = function () {
-  window.open("./sign.html");
-};
