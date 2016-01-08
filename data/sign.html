@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Copy &amp; Sign messages</title>
+  </head>
+  <body>
+    <!--Un formulaire habituel utilisant les éléments input-->
+    <script src="stringview.js"></script>
+    <script src="sign-message.js"></script>
+    <form action="javascript:sign()" method="get">
+      <p>Name: <input type="text" name="name" id="name" /></p>
+      <p>Public Key file url: <input type="text" name="identity" id="identity" /></p>
+      <p>HTML Content:</p>
+      <textarea name="text" id="text" rows="30" cols="128">Saisir un texte ici.</textarea>
+      <input type="submit" value="Sign" />
+    </form>
+    <form>
+      <p>Signed Message:</p>
+      <textarea name="signedText" id="signedText" rows="30" cols="128"></textarea>
+      <p>Public key: (to be saved at the Public Key file url)</p>
+      <textarea name="pubkey" id="pubkey" rows="30" cols="128"></textarea>
+      <p>Private key: (if you want to use it for something else)</p>
+      <textarea name="prvkey" id="prvkey" rows="30" cols="128"></textarea>
+    </form>
+  </body>
+</html>

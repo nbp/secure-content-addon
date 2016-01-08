@@ -1,0 +1,12 @@
+{
+  "title": "Secure Content",
+  "name": "secure-content",
+  "version": "0.0.1",
+  "description": "Verify the authenticity of the content, and display it in the chrome of the browser.",
+  "main": "index.js",
+  "author": "Nicolas B. Pierron",
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "license": "MIT"
+}
